@@ -1,0 +1,95 @@
+/* ==============
+Typography 
+============== */
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Lora", serif;
+  margin-bottom: 0;
+  color: #143774;
+}
+
+.subtitle {
+  margin-top: 0;
+  font-size: 0.75rem;
+  color: #1792d2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+  outline: none;
+}
+
+.current-page {
+  border-bottom: gray 1px solid;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+/* ==============
+Layout 
+============== */
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+.logo {
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 0.5em;
+  }
+}
