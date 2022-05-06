@@ -51,10 +51,13 @@ body {
 }
 
 .container {
-  display: flex;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -80,7 +83,7 @@ nav li {
 }
 
 @media (max-width: 750px) {
-  .container {
+  .header-container {
     flex-direction: column;
   }
 
